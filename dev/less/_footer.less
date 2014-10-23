@@ -1,0 +1,128 @@
+footer {
+    padding-top: 60px;
+    background-color: #f6f6f6;
+    color: rgb(46, 46, 46);
+    a {
+        .routine-font;
+    }
+    .copyright {
+    	color: @font-lt-grey;
+    	font-size: 11px;
+    }
+    .socials {
+    	display: block;
+    	.clearfix;
+    	li {
+            
+    		float: left;
+    		width: 40px;
+    		height: 40px;
+    	}
+    }
+    .foot-nav {
+        .clearfix;
+    }
+    .fn-section {
+        float: left;
+        box-sizing: border-box;
+        .soc {
+            display: block;    
+            float: left;
+            border-radius: 5px;
+            padding: 5px;
+            &:hover {
+                background-color: #fff;
+            }
+            &:after {
+                content: "";
+                display: block;
+                background-image: url(../img/footer-sprite.png);
+            }
+            &.fb:after {
+            	.sp-facebook;
+            }
+            &.tw:after {
+                .sp-twitter;
+            }
+            &.googl:after {
+                .sp-google;
+            }
+            &.insta:after {
+                .sp-insta;
+            }
+            &.in:after {
+                .sp-linkedin
+            }
+            &.tmblr:after {
+                .sp-tumblr
+            }
+            &.yt:after {
+                .sp-youtube
+            }
+            &.pin:after {
+                .sp-pinterest
+            }
+            &.rss:after {
+                .sp-rss
+            }
+        }
+    }
+    .fn-section.fn-logo {
+        img {
+            width: 100%;
+        }
+    }
+    .top-row .fn-section.news {
+        border-top-color: @news
+    }
+    .top-row .fn-section.sports {
+        border-top-color: @sports
+    }
+    .top-row .fn-section.life {
+        border-top-color: @life
+    }
+    .top-row .fn-section.money {
+        border-top-color: @money
+    }
+    .top-row .fn-section.tech {
+        border-top-color: @tech
+    }
+    .top-row .fn-section.travel {
+        border-top-color: @travel
+    }
+    .top-row .fn-section.opinion {
+        border-top-color: @opinion
+    }
+    .top-row .fn-section.weather {
+        border-top-color: @weather
+    }
+    .top-row {
+        margin-bottom: 60px;
+        .fn-section {
+            width: @wrap / 8;
+            border-top: 2px solid;
+        }
+    }
+    .nd-row {
+        .fn-section.fn-logo {
+           width: 250px;
+        }
+        .fn-section {
+        	width: 200px;
+        }
+        .fn-section.social {
+        	width: 330px;
+        	padding: 0 80px 0 50px;
+        }
+    }
+    h2 {
+        .foot-h2;
+        margin: 20px 0;
+        text-transform: none;
+    }
+    .foot-list {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+::selection {
+    background: rgba(0, 0, 0, 0);
+}
+::-moz-selection {
+    background: rgba(0, 0, 0, 0);
+}
+h1 {
+    .h1;
+    a {
+        .h1;
+    }
+}
+h2 {
+    .h2;
+}
+h3 {
+    .h3;
+}
+h4 {
+    .h4
+}
+h5 {
+    .h5;
+}
+h1, h2, h3 {
+    .upper;
+}
+body {
+    background-color: @background;
+    .body-font;
+}
+a {
+    .body-font;
+    &:hover {
+        color: #fff;
+    }
+}
+img {
+	display: block;
+	vertical-align: top;
+    width: 100%;
+}
+main {
+    .clearfix;
+}
+section {
+    .clearfix;
+    border-bottom: 1px solid @border-semi-grey;
+
+}
+figure {
+    display: block;
+    position: relative;
+    a {
+       .figure-font;
+    }
+}
+figcaption {
+    box-sizing: border-box;
+    z-index: 2;
+}
+main {
+    position: relative;
+    float: left;
+    width: @main;
+}
