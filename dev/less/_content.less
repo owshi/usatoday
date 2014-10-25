@@ -521,10 +521,7 @@
         overflow: hidden;
         .gallery-viewport {
             .slide {
-                display: none;
-                &.active {
-                    display: block;
-                }
+                
                 
             }
         }
@@ -555,17 +552,27 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 75px;
-        overflow: hidden;
+        height: 75px; box-sizing: border-box;
+         background-color: @semi-transparent;padding: 15px;
         .thumbs {
+           
             display: block;
-            position: absolute;
-            width: 3000px;
+            position: relative;
+            width: 100%;
             top: 0;
             left: 0;
-            padding: 15px;
-            background-color: @semi-transparent;
+            overflow: hidden;
+            height: 47px;
+            .scroll-area {
+                display: block;
+                position: absolute;
+                height: 47px;
+                width: 1000px;
+                top:0;
+                left: 0;
+            }
             li {
+
                 float: left;
                 margin-left: 30px;
                 box-sizing: border-box;
@@ -630,18 +637,23 @@
         box-shadow: inset 0 1px 2px 0 darken(@input-grey, 10%);
         margin-top: 25px;
         .scrolldrag {
-            position: absolute;
-            width: 150px;
-            height: 5px;
-            top: 0;
-            left: 0;
+            position: absolute;          
+            height: 6px;
             border-radius: 2px;
-            background-color: @gallery-bg;
-            border: 1px solid darken(@input-grey, 10%);
+            margin-top: 0px;
+            background-color: #999;           
             cursor: pointer;
-            &:hover {
-                .transform(scaleY(1.5) scaleX(1.02));
+            .transition( 0.2s linear);
+             -webkit-transition-property: margin-top, height, background-color;
+             -moz-transition-property: margin-top, height, background-color;
+             -ms-transition-property: margin-top, height, background-color;
+             transition-property: margin-top, height, background-color;
+            &.hover {
+                height: 15px;   
+                margin-top: -5px; 
+                background-color: #777;            
             }
+         
         }
     }
 }
